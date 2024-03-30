@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('gambar2.avif'); /* Ganti 'background.jpg' dengan URL atau path file gambar latar belakang Anda */
+    background-size: cover;
+    background-position: center;
+}
+
+.calculator {
+    max-width: 300px;
+    width: 100%;
+    background-color: rgba(48, 198, 166, 0.8); /* Menambahkan transparansi untuk membaca teks lebih mudah */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+#display {
+    width: 91%;
+    padding: 13px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(241, 234, 234, 0.5); /* Memberikan transparansi untuk latar belakang input */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 7px;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: rgba(242, 236, 236, 0.8); /* Memberikan transparansi untuk latar belakang tombol */
+}
+
+button:hover {
+    background-color: rgba(159, 133, 133, 0.8); /* Memberikan transparansi saat tombol disorot */
+}
+
+.special {
+    background-color: #ffa500;
+}
+
+.operator {
+    background-color: #3307a4;
+    color: #fff;
+}
+
+.equal {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.clear {
+    background-color: #f01734;
+    color: #fff;
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 768px) {
+    .calculator {
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .calculator {
+        max-width: 200px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
